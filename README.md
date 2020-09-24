@@ -12,6 +12,7 @@ Run this command on the command line on the machine to install Certbot.
 ```sh
 sudo yum install certbot python2-certbot-apache
 ```
+Or Nginx
 ```sh
 sudo yum install certbot python2-certbot-nginx
 ```
@@ -21,6 +22,7 @@ Run this command to get a certificate and have Certbot edit your Apache configur
 ```sh
 sudo certbot --apache
 ```
+Or Nginx
 ```sh
 sudo certbot --nginx
 ```
@@ -29,6 +31,7 @@ If you're feeling more conservative and would like to make the changes to your A
 ```sh
 sudo certbot certonly --apache
 ```
+Or Nginx
 ```sh
 sudo certbot certonly --nginx
 ```
