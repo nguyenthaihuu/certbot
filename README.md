@@ -35,6 +35,22 @@ Or Nginx
 ```sh
 sudo certbot certonly --nginx
 ```
+## Create  Certificates
+```sh
+sudo certbot --apache -d example.com
+```
+- more www
+```sh
+sudo certbot --apache -d example.com -d www.example.com
+```
+Or Nginx
+```sh
+sudo certbot --nginx -d example.com
+```
+- more www
+```sh
+sudo certbot --nginx -d example.com -d www.example.com
+```
 ## Set up automatic renewal
 We recommend running the following line, which will add a cron job to the default crontab.
 ```sh
