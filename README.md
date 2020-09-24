@@ -12,16 +12,25 @@ Run this command on the command line on the machine to install Certbot.
 ```sh
 sudo yum install certbot python2-certbot-apache
 ```
+```sh
+sudo yum install certbot python2-certbot-nginx
+```
 ## Choose how you'd like to run Certbot
 Either get and install your certificates...
 Run this command to get a certificate and have Certbot edit your Apache configuration automatically to serve it, turning on HTTPS access in a single step.
 ```sh
 sudo certbot --apache
 ```
+```sh
+sudo certbot --nginx
+```
 Or, just get a certificate
 If you're feeling more conservative and would like to make the changes to your Apache configuration by hand, run this command.
 ```sh
 sudo certbot certonly --apache
+```
+```sh
+sudo certbot certonly --nginx
 ```
 ## Set up automatic renewal
 We recommend running the following line, which will add a cron job to the default crontab.
